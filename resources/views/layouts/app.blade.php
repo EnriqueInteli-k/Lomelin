@@ -12,7 +12,7 @@
         <link href="{{ asset('vendors/iconfonts/simple-line-icon/css/simple-line-icons.css') }}" rel="stylesheet">
         <link href="{{ asset('vendors/css/vendor.bundle.base.css') }}" rel="stylesheet">
         <link href="{{ asset('vendors/css/vendor.bundle.addons.css') }}" rel="stylesheet">
-        
+        <link href="{{ asset('vendors/iconfonts/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
 
         
         

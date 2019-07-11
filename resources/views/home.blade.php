@@ -28,28 +28,57 @@
 
 <div class="row">
 <div class="col-1"></div>
-<div class="col-4"><p align="justify" class="lomelin-text3">Lorem ipsum dolor sit amet consectetur adipiscing elit egestas augue, ultricies neque habitant nulla pharetra cum cras platea, rhoncus dis elementum tempus senectus porttitor inceptos lobortis. Sodales aenean suspendisse mus quam mollis magna interdum cum eros, etiam molestie fusce inceptos ante justo in senectus.</p> </div>
+<div class="col-4"><p align="justify" class="lomelin-text3">Lorem ipsum dolor sit amet consectetur adipiscing elit egestas augue, ultricies neque habitant nulla pharetra cum cras platea, rhoncus dis elementum tempus senectus porttitor inceptos lobortis.</p> </div>
 <div class="col-2"><img src="{{ asset('images/sample1.png') }}" style="width:100%"></div>
 <div class="col-4"><p align="justify" class="lomelin-text3">Somos una empresa familiar líder en el sector inmobiliario desde 1943. ¡Este año cupimos 75 años de trayectoria! Te invitamos a celebrar con nosotros y a obtener grandes beneficios.</p> </div>
 <div class="col-1"></div>
 </div>
 
 
-<div class="row">
-<div class="col-1"></div>
-<div class="col-4"><p align="justify" class="lomelin-text3"></p> </div>
-<div class="col-2"><img src="{{ asset('images/sample2.png') }}" style="width:100%"></div>
-<div class="col-4"><p align="justify" class="lomelin-text3">Asesoramos a nuestros clientes con honradez y responsabilidad para brindarles las mejores soluciones y servicios inmobiliarios, en la promoción de inmuebles a la venta o renta, administración, consultoría y comercialización de desarrollos.</p> </div>
-<div class="col-1"></div>
+<div class="row" style="height: 20px;">
 </div>
 
 
 <div class="row">
 <div class="col-1"></div>
-<div class="col-4"><p align="justify" class="lomelin-text3"></p> </div>
+<div class="col-4">
+
+<div class="row">
+<div class="col-6"><p align="justify" class="lomelin-text4"><i class="fa fa-truck"></i> Instalaciones</p></div>
+<div class="col-6"><p align="justify" class="lomelin-text4"><i class="fa fa-dollar"></i> Precio</p></div>
+</div>
+</div>
+
+<div class="col-2"><img src="{{ asset('images/sample2.png') }}" style="width:100%"></div>
+<div class="col-4"><p align="justify" class="lomelin-text3">Asesoramos a nuestros clientes con honradez y responsabilidad para brindarles las mejores soluciones y servicios inmobiliarios, en la promoción de inmuebles a la venta o renta, administración, consultoría y comercialización de desarrollos.</p> </div>
+<div class="col-1"></div>
+</div>
+
+<div class="row" style="height: 20px;">
+</div>
+
+<div class="row">
+<div class="col-1"></div>
+<div class="col-4">
+<div class="row">
+<div class="col-6"><p align="justify" class="lomelin-text4"><i class="fa fa-building-o"></i> Propiedad</p></div>
+<div class="col-6"><p align="justify" class="lomelin-text4"><i class="fa  fa-map-marker"></i> Ubicación</p></div>
+</div>
+</div>
 <div class="col-2"><img src="{{ asset('images/sample3.png') }}" style="width:100%"></div>
 <div class="col-4"><p align="justify" class="lomelin-text3">Comparte con tus conocidos la oportunidad de invertir en alguno de nuestros desarrollos y gana bonos en efectivo!</p> </div>
 <div class="col-1"></div>
+</div>
+
+
+<div class="row" style="height: 145px;">
+</div>
+
+
+<div class="row">
+<div class="col-1"></div>
+<div class="col-9"><span class="lomelin-text1">Agregadas recientemente.</span></div>
+<div class="col-2"></div>
 </div>
 
 
