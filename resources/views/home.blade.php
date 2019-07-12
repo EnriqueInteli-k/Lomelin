@@ -81,6 +81,189 @@
 <div class="col-2"></div>
 </div>
 
+<div class="row" style="height: 20px;">
+</div>
+
+<div class="row" style="height: 20px;">
+</div>
+
+<div class="row grid-margin">
+        <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+              <div class="card">
+                   <div class="card-body">
+       
+                    <div class="owl-carousel owl-theme loop">
+
+                    <div class="item"style="margin-right: 10px" >
+                        <div class="card text-white">
+                            <img class="card-img" src="{{ asset('images/car1.png') }}" alt="banner image"/>
+                                <div class="card-img-overlay d-flex">
+                                    <div class="mt-auto text-center w-100">
+                                      <div style="background: white; width:100%;">
+                                           <p class="lomelin-text5">Propiedad</p>
+                                           <p class="lomelin-text6">Lorem ipsum dolor sit amet consectetur adipiscing elit suscipit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="item"style="margin-right: 10px" >
+                        <div class="card text-white">
+                            <img class="card-img" src="{{ asset('images/car2.png') }}" alt="banner image"/>
+                                <div class="card-img-overlay d-flex">
+                                    <div class="mt-auto text-center w-100">
+                                      <div style="background: white; width:100%;">
+                                           <p class="lomelin-text5">Propiedad</p>
+                                           <p class="lomelin-text6">Lorem ipsum dolor sit amet consectetur adipiscing elit suscipit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item"style="margin-right: 10px" >
+                        <div class="card text-white">
+                            <img class="card-img" src="{{ asset('images/car3.png') }}" alt="banner image"/>
+                                <div class="card-img-overlay d-flex">
+                                    <div class="mt-auto text-center w-100">
+                                      <div style="background: white; width:100%;">
+                                           <p class="lomelin-text5">Propiedad</p>
+                                           <p class="lomelin-text6">Lorem ipsum dolor sit amet consectetur adipiscing elit suscipit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+
+                      <div class="item"style="margin-right: 10px" >
+                        <div class="card text-white">
+                            <img class="card-img" src="{{ asset('images/car4.png') }}" alt="banner image"/>
+                                <div class="card-img-overlay d-flex">
+                                    <div class="mt-auto text-center w-100">
+                                      <div style="background: white; width:100%;">
+                                           <p class="lomelin-text5">Propiedad</p>
+                                           <p class="lomelin-text6">Lorem ipsum dolor sit amet consectetur adipiscing elit suscipit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                      <div class="item"style="margin-right: 10px" >
+                        <div class="card text-white">
+                            <img class="card-img" src="{{ asset('images/car5.png') }}" alt="banner image"/>
+                                <div class="card-img-overlay d-flex">
+                                    <div class="mt-auto text-center w-100">
+                                      <div style="background: white; width:100%;">
+                                           <p class="lomelin-text5">Propiedad</p>
+                                           <p class="lomelin-text6">Lorem ipsum dolor sit amet consectetur adipiscing elit suscipit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="item"style="margin-right: 10px" >
+                        <div class="card text-white">
+                            <img class="card-img" src="{{ asset('images/car6.png') }}" alt="banner image"/>
+                                <div class="card-img-overlay d-flex">
+                                    <div class="mt-auto text-center w-100">
+                                      <div style="background: white; width:100%;">
+                                           <p class="lomelin-text5">Propiedad</p>
+                                           <p class="lomelin-text6">Lorem ipsum dolor sit amet consectetur adipiscing elit suscipit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="item"style="margin-right: 10px" >
+                        <div class="card text-white">
+                            <img class="card-img" src="{{ asset('images/car7.png') }}" alt="banner image"/>
+                                <div class="card-img-overlay d-flex">
+                                    <div class="mt-auto text-center w-100">
+                                      <div style="background: white; width:100%;">
+                                           <p class="lomelin-text5">Propiedad</p>
+                                           <p class="lomelin-text6">Lorem ipsum dolor sit amet consectetur adipiscing elit suscipit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+</div>
+<div class="col-lg-1"></div>  
+</div>
+
+
+                    <div class="clearfix"  style="padding: 30px 30px;">
+                        <div class="card text-white">
+                            <img class="card-img" src="{{ asset('images/couple.png') }}" alt="banner image"/>
+                                <div class="card-img-overlay d-flex" style="padding: 0px 0px;" >
+                                    <div class="text-left w-100">
+                                    <div style="height: 15%;"></div>
+                                      <div style="background: black; width:100%; opacity: 0.5; filter: alpha(opacity=50);">
+                                        
+                                            <div class="row">
+                                            <div class="col-lg-1"></div> 
+                                            <div class="col-lg-7"> 
+                                            <p class="lomelin-text7" style="line-height: 1.0;">Conviértete en Referidor.</p>
+                                            <p class="lomelin-text8" style="line-height: 1.0;">Lorem ipsum dolor sit amet consectetur adipiscing ultricies neque habitant nulla pharetra cum cras platea, rhoncus dis elementum</p>
+                                            </div>
+                                            <div class="col-lg-4"></div> 
+                                          </div>
+                                        
+                                        </div>
+                                        <div style="height: 15%;"></div>
+
+                                        <div class="row">
+                                            <div class="col-lg-1"></div> 
+                                            <div class="col-lg-7"> 
+                                            <button type="button" class="btn btn-outline-* btn-lg" style="background: white;">MÁS INFORMACIÓN </button>
+                                        </div>
+                                            <div class="col-lg-4"></div> 
+                                          </div>
+
+
+                                        
+
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+<div class="row" style="height:40px;"></div>
+
+
+                    <div class="w-100 clearfix">
+                        <div class="card text-white">
+                            <img class="card-img" src="{{ asset('images/couch1.png') }}" alt="banner image"/>
+                                <div class="card-img-overlay d-flex" style="padding: 0px 0px; background: black; width:100%; opacity: 0.5; filter: alpha(opacity=50);" >
+                                    <div class="text-center w-100" style="width: 50%; text-align:center;  padding 20px 0; vertical-align: middle;">
+                                    <div style="height: 20%; width: 80%;"></div>
+                                    <div style="height: 60%; border: 10px; border-color: white;">
+
+                                    <p class="lomelin-text7" style="line-height: 1.0;">Lorem ipsum dolor sit.</p>
+                                    </div>
+                                    <div style="height: 20%; width: 80%;"></div>
+
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+<div class="w-100 clearfix" style="background: #4cbd94; height: 480px;">
+
+
+</div>
+
 
 
 @endsection

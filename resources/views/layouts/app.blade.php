@@ -23,6 +23,7 @@
         
          <link href="{{ asset('css/style.css') }}" rel="stylesheet">
          <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+         <link href="{{ asset('css/owl.carousel.css') }}" rel="stylesheet">
         <!-- endinject -->
         <link rel="shortcut icon" href="images/favicon.png"/>
     </head>
@@ -181,6 +182,15 @@
         <!-- plugins:js -->
         <script src="{{ asset('vendors/js/vendor.bundle.base.js') }}"></script>
         <script src="{{ asset('vendors/js/vendor.bundle.addons.js') }}"></script>
+        <script src="{{ asset('js/template.js') }}"></script>
+        <script src="{{ asset('js/owl.carousel.js') }}"></script>
+        <script>
+        $('.owl-carousel').owlCarousel({
+            margin:10,
+            items:3,
+            nav: true,
+        });
+        </script>
         <!-- endinject -->
         <!-- Plugin js for this page-->
         <!-- End plugin js for this page-->
