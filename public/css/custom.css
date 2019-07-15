@@ -60,6 +60,21 @@
     font-weight: normal;
 }
 
+.lomelin-text9 {
+    font-family: Arial;
+    font-size: 18px;
+    color: white;
+    font-weight: normal;
+}
+
+.lomelin-text10 {
+    font-family: Helvetica Neue;
+    font-size: 36px;
+    color:white;
+    font-weight: bold;
+}
+
+
 .white-background {
     background: White;
 }
