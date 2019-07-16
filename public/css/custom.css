@@ -75,6 +75,29 @@
 }
 
 
+.lomelin-text11 {
+    font-family: Arial;
+    font-size: 20px;
+    color:#123E8F;
+    font-weight: bold;
+}
+
+.lomelin-text12 {
+    font-family: Arial;
+    font-size: 20px;
+    color:#123E8F;
+    font-weight: normal;
+}
+
+.lomelin-text13 {
+    font-family: Arial;
+    font-size: 22px;
+    color:#464646;
+    font-weight: normal;
+}
+
+
+
 .white-background {
     background: White;
 }

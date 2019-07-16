@@ -32,14 +32,14 @@
         <div class="container-scroller">
             <!-- partial:../../partials/_horizontal-navbar.html -->
             <nav class="navbar horizontal-layout col-lg-12 col-12 p-0">
-                <div class="nav-top flex-grow-1" style="background: #E8EBF3; height: 68px;">
+                <div class="nav-top flex-grow-1" style="background: #004AAB; height: 68px;">
                     @guest
                     <div class="container d-flex flex-row h-100">
                       
                         <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
                             <ul class="navbar-nav navbar-nav-right mr-0">
                                 <li class="nav-item nav-profile">
-                                    <a class="nav-link" href="{{ route('login')}}"> <span class="" style="font-family: Helvetica; font-size: 22px; color: #4CBD94;">Log-in</span>  </a>
+                                    <a class="nav-link" href="{{ route('login')}}"> <span class="" style="font-family: Helvetica; font-size: 22px; color: white;">Log-in</span>  </a>
                                 </li>
                               
                                 <li class="nav-item">
@@ -123,7 +123,8 @@
 
                         <ul class="nav">
                         <li class="nav-item" style="line-height: 117px;">
-                          <button type="button" class="btn btn-outline-secondary">Propiedad</button>
+                           <a href="{{ URL::route('resultado') }}" class="btn btn-outline-secondary"> Propiedad </a> 
+                          
                         </li>
                         <li class="nav-item" style="width:5px;"></li>
                         </ul>
