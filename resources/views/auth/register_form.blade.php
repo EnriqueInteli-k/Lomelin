@@ -20,7 +20,7 @@
         <div class="card">
                 <div class="card-body">
         
-            <h4 class="card-title">Registro de nuevos usuarios:</h4>
+            <h4 class="card-title" style = "font-family: Helvetica Neue; font-size: 26px; color: #292929; font-weight: normal;">Registro de nuevos usuarios:</h4>
                   <p class="card-description">
                     Ingresa tus datos de acceso
                   </p>        
@@ -31,26 +31,26 @@
         <p class="login-img"><i class="icon_lock_alt"></i></p>
        <div class="form-group">
           <span class="input-group-addon"><i class="icon_profile"></i></span>
-           <label for="username">Usuario</label>
-          <input type="text" class="form-control lomelin-text5" placeholder="Usuario" id="username" name="username" autofocus required>
+           <label for="username" class="lomelin-text15">Usuario</label>
+          <input type="text" class="form-control" placeholder="Usuario" id="username" name="username" autofocus required>
         </div> 
     
         
        <div class="form-group">
           <span class="input-group-addon"><i class="icon_profile"></i></span>
-           <label for="name">Nombre completo</label>
-          <input type="text" class="form-control lomelin-text5" placeholder="Nombre completo" id="name" name="name" required>
+           <label for="name" class="lomelin-text15">Nombre completo</label>
+          <input type="text" class="form-control" placeholder="Nombre completo" id="name" name="name" required>
         </div> 
       
       
        <div class="form-group">
           <span class="input-group-addon"><i class="icon_profile"></i></span>
-           <label for="email">Dirección de correo:</label>
-          <input type="text" class="form-control lomelin-text5" placeholder="email" id="email" name="email" autofocus required>
+           <label for="email" class="lomelin-text15">Dirección de correo:</label>
+          <input type="text" class="form-control" placeholder="email" id="email" name="email" autofocus required>
         </div> 
            
          <div class="form-group">
-                    <label for="exampleFormControlSelect2">Tipo de usuario</label>
+                    <label for="exampleFormControlSelect2" class="lomelin-text15">Tipo de usuario</label>
                     
                     {!! Form::select('id',$tiposUsuarios,1,['class'=>'form-control','id'=>'tipo','name'=>'tipo' ]); !!}
                    
@@ -58,14 +58,14 @@
         
         <div class="form-group">
           <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-          <label for="password">Contraseña</label>
-          <input type="password" class="form-control lomelin-text5" placeholder="Contraseña" id="password" name="password" required>
+          <label for="password" class="lomelin-text15">Contraseña</label>
+          <input type="password" class="form-control" placeholder="Contraseña" id="password" name="password" required>
          </div>
        
         <div class="form-group">
           <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-          <label for="password2">Confirma tu contraseña</label>
-          <input type="password" class="form-control lomelin-text5" placeholder="Contraseña" id="password2" name="password2">
+          <label for="password2" class="lomelin-text15">Confirma tu contraseña</label>
+          <input type="password" class="form-control" placeholder="Contraseña" id="password2" name="password2">
          </div>
        
         

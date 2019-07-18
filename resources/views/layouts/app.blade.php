@@ -107,6 +107,8 @@
 
                         </ul>
 
+                     @guest
+                    
                         <ul class="nav navbar-nav">
                         <li class="dropdown" style="line-height: 117px;">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle btn btn-outline-secondary">Tipo de adquisición</a> 
@@ -162,12 +164,35 @@
 
                         <ul class="nav">
                         <li class="nav-item" style="line-height: 117px;">
-                        <button type="button" class="btn btn-success btn-fw">Sistema referidos</button>
+                            
+                        <a href="{{ route('login')}}" class="btn btn-success btn-fw">Sistema referidos</a>
                         </li>
                         </ul>
+ @else
+ 
+                        <ul class="nav">
+                        <li class="nav-item" style="line-height: 117px;">
+                            
+                        <a href="{{ route('dashboard')}}" class="btn btn-outline-secondary">Dashboard</a>
+                        </li>
+                        </ul>
+ 
+ <ul class="nav">
+     <li class="nav-item" style="line-height: 117px;">
+         <div style="width: 48px;"></div>
+     </li>
+ </ul>
+ 
+                    <ul class="nav">
+                        <li class="nav-item" style="line-height: 117px;">
+                            
+                        <a href="{{ route('perfil')}}" class="btn btn-outline-secondary">Perfil</a>
+                        </li>
+                        </ul>
+ 
+ 
 
-
-
+ @endguest
 
                 </div>
                     

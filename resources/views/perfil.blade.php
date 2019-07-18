@@ -4,22 +4,23 @@
  <div class="content-wrapper">
                         <div class="row">
                             <div class="col-md-6 col-lg-12 grid-margin stretch-card">
-                                <div class="card text-white border-0 bg-secondary">
+                                <div class="card text-white border-0" style="background: #004AAB;">
                                     <div class="card-body">
                                         <div class="d-flex align-items-center">
                                             <div class="ml-5">
-                                                 <img src="{{ asset('images/user1.png') }}" class="img-fluid" width="120px">
+                                                 <img src="{{ asset('images/face1.png') }}" class="img-fluid rounded-circle" width="120px">
                                             </div>
-                                            <div class="ml-5">
-                                                <p class="lomelin-text1"><p class="lomelin-text2">Propietario</p>Sr. Eduardo Lozano Cortes</p>
-                                            </div>
-                                            <div class="col-md-2 my-auto text-center">
-                                                <p class="lomelin-text3">Proyectos</p>
-                                                <p class="lomelin-text3">24</p>
+                                            <div class="ml-5" style="line-height: 1.2;">
+                                                <p class="lomelin-text1"><p class="lomelin-text16" style="line-height: 1.2;">{{ Auth::user()->name }}</p>
+                                                <p class="lomelin-text17" style="line-height: 1.2;">Asesor comercial</p>
                                             </div>
                                             <div class="col-md-2 my-auto text-center">
-                                                <p class="lomelin-text3">Activos</p>
-                                                <p class="lomelin-text3">8</p>
+                                                <p class="lomelin-text17">Proyectos</p>
+                                                <p class="lomelin-text17">24</p>
+                                            </div>
+                                            <div class="col-md-2 my-auto text-center">
+                                                <p class="lomelin-text17">Activos</p>
+                                                <p class="lomelin-text17">8</p>
                                             </div>
                                         </div>
                                     </div>
@@ -36,25 +37,30 @@
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <div class="form-group row">
-                                                        <label class="col-sm-3 col-form-label lomelin-text4 control-label">Nombre Completo</label>
+                                                        <label class="col-sm-3 col-form-label lomelin-text18 control-label">Nombre Completo</label>
                                                         <div class="col-sm-9">
-                                                            <input type="text" class="form-control lomelin-text4" value="{{ Auth::user()->name }}">
+                                                            <input type="text" class="form-control lomelin-text19" value="{{ Auth::user()->name }}">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group row">
-                                                        <label class="col-sm-3 col-form-label lomelin-text4 control-label">Correo</label>
+                                                        <label class="col-sm-3 col-form-label lomelin-text18 control-label">Correo</label>
                                                         <div class="col-sm-9">
-                                                            <input type="text" class="form-control lomelin-text4" value = "{{ Auth::user()->email }}">
+                                                            <input type="text" class="form-control lomelin-text19" value = "{{ Auth::user()->email }}">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group row">
-                                                        <label class="col-sm-3 col-form-label lomelin-text4 control-label">Organización</label>
+                                                        <label class="col-sm-3 col-form-label lomelin-text18 control-label">Puesto</label>
                                                         <div class="col-sm-9">
-                                                            <input type="text" class="form-control lomelin-text4">
+                                                            <select class="form-control">
+                                                                <option value='1'>Asesor comercial</option>
+                                                                <option value='2'>Gerente</option>
+                                                                <option value='3'>Asesor Tel.</option>
+                                                                
+                                                            </select>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -70,23 +76,23 @@
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <div class="form-group row">
-                                                        <label class="col-sm-3 col-form-label lomelin-text4 control-label">Telefóno</label>
+                                                        <label class="col-sm-3 col-form-label lomelin-text18 control-label">Telefóno</label>
                                                         <div class="col-sm-9">
-                                                            <input type="text" class="form-control lomelin-text4">
+                                                            <input type="text" class="form-control lomelin-text19" value="3314522323">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group row">
-                                                        <label class="col-sm-3 col-form-label lomelin-text4 control-label">Ubicación</label>
+                                                        <label class="col-sm-3 col-form-label lomelin-text18 control-label">Ubicación</label>
                                                         <div class="col-sm-9">
-                                                            <input type="text" class="form-control lomelin-text4">
+                                                            <input type="text" class="form-control lomelin-text19" value="Zapopan, Jalisco">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group row">
-                                                        <label class="col-sm-3 col-form-label lomelin-text4 control-label">Estado</label>
+                                                        <label class="col-sm-3 col-form-label lomelin-text18 control-label">Estado</label>
                                                         <div class="col-sm-9">
                                                             <select class="form-control">
                                                                 <option value='Ciudad de México'>Ciudad de México</option>

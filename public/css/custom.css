@@ -96,6 +96,47 @@
     font-weight: normal;
 }
 
+.lomelin-text14 {
+    font-family: Helvetica Neue;
+    font-size: 26px;
+    color:black;
+    font-weight: bold;
+}
+.lomelin-text15 {
+    font-family: Helvetica Neue;
+    font-size: 14px;
+    color: #4CBD94;
+    font-weight: normal;
+}
+
+.lomelin-text16 {
+    font-family: Helvetica Neue;
+    font-size: 26px;
+    color:white;
+    font-weight: bold;
+}
+
+.lomelin-text17 {
+    font-family: Helvetica Neue;
+    font-size: 26px;
+    color:white;
+    font-weight: normal;
+}
+
+
+.lomelin-text18 {
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    color: #707070;
+    font-weight: bold;
+}
+
+.lomelin-text19 {
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    color: #707070;
+    font-weight: normal;
+}
 
 
 .white-background {

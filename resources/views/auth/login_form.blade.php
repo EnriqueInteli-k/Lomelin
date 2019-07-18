@@ -15,7 +15,7 @@
         <div class="card">
                 <div class="card-body">
         
-            <h4 class="card-title">Usuarios registrados</h4>
+            <h4 class="card-title" style = "font-family: Helvetica Neue; font-size: 26px; color: #292929; font-weight: normal;">Inicie sessión o registre su cuenta</h4>
                   <p class="card-description">
                     Ingresa tus datos de acceso
                   </p>        
@@ -26,14 +26,14 @@
         <p class="login-img"><i class="icon_lock_alt"></i></p>
        <div class="form-group">
           <span class="input-group-addon"><i class="icon_profile"></i></span>
-           <label for="username">Usuario</label>
-          <input type="text" class="form-control lomelin-text5" placeholder="Usuario" id="username" name="username" autofocus>
+           <label for="username" class="lomelin-text15">Usuario</label>
+          <input type="text" class="form-control" placeholder="Usuario" id="username" name="username" autofocus>
         </div> 
         <br>
         <div class="form-group">
           <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-          <label for="password">Contraseña</label>
-          <input type="password" class="form-control lomelin-text5" placeholder="Contraseña" id="password" name="password">
+          <label for="password" class="lomelin-text15">Contraseña</label>
+          <input type="password" class="form-control" placeholder="Contraseña" id="password" name="password">
          </div>
         <br>
         <label class="checkbox">
