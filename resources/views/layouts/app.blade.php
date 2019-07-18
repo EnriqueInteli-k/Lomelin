@@ -107,9 +107,13 @@
 
                         </ul>
 
-                        <ul class="nav">
-                        <li class="nav-item" style="line-height: 117px;">
-                          <button type="button" class="btn btn-outline-secondary">Tipo de adquisición</button>
+                        <ul class="nav navbar-nav">
+                        <li class="dropdown" style="line-height: 117px;">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle btn btn-outline-secondary">Tipo de adquisición</a> 
+                            <ul class="dropdown-menu">
+                <li><a href="#" class="btn btn-outline-secondary" style="width: 100%;">Venta</a> </li>
+                <li><a href="#" class="btn btn-outline-secondary" style="width: 100%;">Renta</a> </li>
+                            </ul>
                         </li>
                         <li class="nav-item" style="width:5px;"></li>
                         </ul>
@@ -121,10 +125,17 @@
                         <li class="nav-item" style="width:5px;"></li>
                         </ul>
 
-                        <ul class="nav">
-                        <li class="nav-item" style="line-height: 117px;">
-                           <a href="{{ URL::route('resultado') }}" class="btn btn-outline-secondary"> Propiedad </a> 
-                          
+                        <ul class="nav navbar-nav">
+                        <li class="dropdown" style="line-height: 117px;">
+                           <a href="#" data-toggle="dropdown" class="dropdown-toggle btn btn-outline-secondary"> Propiedad </a> 
+                           <ul class="dropdown-menu">
+                <li><a href="{{ route('getPropiedades', 1 ) }}" class="btn btn-outline-secondary" style="width: 100%;">Casa</a> </li>
+                <li><a href="{{ route('getPropiedades', 2 ) }}" class="btn btn-outline-secondary" style="width: 100%;">Departamento</a> </li>
+                <li><a href="{{ route('getPropiedades', 3 ) }}" class="btn btn-outline-secondary" style="width: 100%;">Local</a> </li>
+                <li><a href="{{ route('getPropiedades', 4 ) }}" class="btn btn-outline-secondary" style="width: 100%;">Nave</a> </li>
+                <li><a href="{{ route('getPropiedades', 5 ) }}" class="btn btn-outline-secondary" style="width: 100%;">Oficina</a> </li>
+                <li><a href="{{ route('getPropiedades', 6 ) }}" class="btn btn-outline-secondary" style="width: 100%;">Terreno</a> </li>
+                           </ul>
                         </li>
                         <li class="nav-item" style="width:5px;"></li>
                         </ul>

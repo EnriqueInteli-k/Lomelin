@@ -40,6 +40,10 @@ Route::post('listado', 'ListadoController@index');
 Route::get('resultado', 'ResultadoController@index')->name('resultado');
 
 Route::get('verPropiedad/{id}',['uses' =>'DetallePropiedadController@verPropiedad'])->name('verPropiedad'); 
+Route::get('getPropiedades/{id}',['uses' =>'ListadoPropiedadesController@ObtenTipoPropiedad'])->name('getPropiedades'); 
+
+
+
 
 //Route::get('deleteHerramienta/{id}',['uses' =>'HerramientasController@deleteHerramienta'])->name('deleteHerramienta'); 
  

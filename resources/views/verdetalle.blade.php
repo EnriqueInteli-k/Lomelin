@@ -103,18 +103,18 @@
 <div class="row">
     <div class="col-md-9 col-sm-6">
 
-<div class="" style="background: white; width: 100%; height: 600px;">
+<div class="" style="background: white; width: 100%;">
     
     <div class="row" style="line-height: 1.2;">
         <div class="col-md-12 col-sm-6">
-            <span class ="lomelin-text2">Departamento Atelier Juriquilla</span><br>  
-            <span class ="lomelin-text3">Juriquilla, Juriquilla</span>  
+            <span class ="lomelin-text2">{{$title}}</span><br>  
+            <span class ="lomelin-text3">{{$colonia}}</span>  
         
 <div class="row" style="height: 45px;">
 </div>
         
             
-            <span class="lomelin-text3">Departamento en venta en piso 9. Cuenta con 2 recamaras, la principal con vestidor y baño, la segunda recamara con closet y baño completo y medio baño para visitas, cocina equipada, sala y comedor con barra y terraza y vista a la ciudad de Querétaro. Cuarto de Lavado, bodega y 2 estacionamientos subterráneos.</span>
+            <span class="lomelin-text3">{!! $body !!}</span>
             <br>
             
 <div class="row" style="height: 25px;">
