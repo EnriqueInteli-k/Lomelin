@@ -27,7 +27,7 @@
                         
                     <div class="item"style="margin-right: 10px" >
                         <div class="card text-white">
-                            <img class="card-img" src="{{ asset("$car") }}" alt="banner image"/>
+                            <img class="card-img" style = "width: 100%; height: 200px;" src="{{ asset("$car") }}" alt="banner image"/>
                                
                         </div>
                     </div>

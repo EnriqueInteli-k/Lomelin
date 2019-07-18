@@ -27,7 +27,7 @@
       
        <div class="col-md-4 col-sm-6 grid-margin stretch-card">
               <div class="card">
-                  <a href="{{ route('verPropiedad', $propiedad->id ) }}"><img class="card-img-top" src="{{ $propiedad->coverPhoto }}" alt="Card image cap1"></a>
+                  <a href="{{ route('verPropiedad', $propiedad->id ) }}"><img class="card-img-top" style = "width: 100%; height: 240px;;" src="{{ $propiedad->coverPhoto }}" alt="Card image cap1"></a>
                 <div class="card-body">
                   <p class="lomelin-text11">{{$propiedad->title }}</p>
                   <p class="lomelin-text11">{{$propiedad->colonia}}</p>
