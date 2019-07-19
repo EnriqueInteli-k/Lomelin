@@ -4,6 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+class atributos
+{
+    public $recamaras;
+    public $banos;
+    public $superficie;
+    public $estacionamientos;
+}
+
+
 class DetallePropiedadController extends Controller
 {
     /**
@@ -41,6 +50,26 @@ class DetallePropiedadController extends Controller
         $procesado = $body['processed'];
         
         
+        if (isset($attributos['field_cajones_de_estacionamiento']))
+        {
+        $estacionamientos = $attributos['field_cajones_de_estacionamiento'];    
+        }
+        else
+        {
+            $estacionamientos = "0";
+        }
+        
+        if (isset($attributos['field_recamaras'])){
+        $recamaras = $attributos['field_recamaras'];
+        }
+        else
+        {
+            $recamaras = "0";
+        }
+        
+        
+        $superficie = $attributos['field_superficie'];
+        
         $field_direccion = $attributos['field_direccion'];
             $colonia = $field_direccion['dependent_locality'];
         
@@ -77,9 +106,16 @@ class DetallePropiedadController extends Controller
                  $imagen = "";
              }
         
+               $cur_atributos = new atributos();
+               $cur_atributos->banos = "2";
+               $cur_atributos->recamaras = $recamaras;
+               $cur_atributos->estacionamientos = $estacionamientos;
+               $cur_atributos->superficie = $superficie;
+             
+             
         $carrusel = array("images/detalle".$id.".png","images/car_6.png", "images/car_7.png", "images/car_8.png", "images/car_9.png");
         
-        return view('verdetalle', ['imagen'=>$imagen,'carrusel'=>$imagenes,'body'=>$procesado,'title'=>$title, 'colonia'=>$colonia]);
+        return view('verdetalle', ['imagen'=>$imagen,'carrusel'=>$imagenes,'body'=>$procesado,'title'=>$title, 'colonia'=>$colonia, 'atributos'=>$cur_atributos]);
    
        
     }

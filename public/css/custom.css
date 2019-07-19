@@ -139,6 +139,21 @@
 }
 
 
+.lomelin-text20 {
+    font-family: Arial;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.lomelin-text22 {
+    font-family: Arial;
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+}
+
+
 .white-background {
     background: White;
 }

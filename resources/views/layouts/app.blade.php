@@ -227,6 +227,14 @@
             items:3,
             nav: true,
         });
+        
+        $(function() {
+		$('.pop').on('click', function() {
+			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+                return false;        
+		});		
+         });
+        
         </script>
         <!-- endinject -->
         <!-- Plugin js for this page-->

@@ -12,7 +12,7 @@
        <div class="col-md-9 col-sm-6">
            <div class="row">
                <div class="col-md-12">
-                    <img src="{{ asset("$imagen") }}" style="width:100%">
+                    <img src="{{ asset("$imagen") }}" class="imagepreview" style="width:100%">
                </div>
                
                
@@ -27,8 +27,9 @@
                         
                     <div class="item"style="margin-right: 10px" >
                         <div class="card text-white">
+                            <a href="#" class="pop">
                             <img class="card-img" style = "width: 100%; height: 200px;" src="{{ asset("$car") }}" alt="banner image"/>
-                               
+                            </a>   
                         </div>
                     </div>
                       
@@ -113,25 +114,84 @@
 <div class="row" style="height: 45px;">
 </div>
         
+
+            <div class="row">
+                <div class="col-md-5 col-sm-6">
+                    <img src="{{ asset('images/rooms.png') }}" style="width: 60px; height: 60px;">
+                    <span class='lomelin-text13'>{{ $atributos->recamaras }} Recámaras</span>
+                </div>
+                <div class="col-md-1">
+                    
+                </div>
+                
+                
+                <div class="col-md-5 col-sm-6">
+                   <img src="{{ asset('images/baths.png') }}" style="width: 60px; height: 60px;">
+                    <span class='lomelin-text13'>{{ $atributos->banos }} Baños completos</span> 
+                </div>
+                
+            </div>
+
+            
+                <div class="row">
+                <div class="col-md-5 col-sm-6">
+                    <img src="{{ asset('images/cars.png') }}" style="width: 60px; height: 60px;">
+                    <span class='lomelin-text13'>{{ $atributos->estacionamientos }} Estacionamiento(s)</span>
+                </div>
+                <div class="col-md-1">
+                    
+                </div>
+                
+                
+                <div class="col-md-5 col-sm-6">
+                   <img src="{{ asset('images/surface.png') }}" style="width: 60px; height: 60px;">
+                    <span class='lomelin-text13'>{{ $atributos->superficie }} mts2.</span> 
+                </div>
+                
+            </div>
+
+            
+            
+<div class="row" style="height: 45px;">
+</div>
+
             
             <span class="lomelin-text3">{!! $body !!}</span>
             <br>
             
-<div class="row" style="height: 25px;">
+            <hr style="color: #464646; size: 2px; height: 2px;">
+
+            <div class="row" style="width: 2; min-width: 2;">
 </div>
         
             
             <span class="lomelin-text11">Características.</span>
             <br>
             
+            <div class="row">
+                <div class="col-md-12 col-sm-6">
+                    <span class='lomelin-text13'>&#10004;Jardin &#10004;Terraza &#10004;Seguridad &#10004;Cuarto de servicio &#10004;Alberca </span>    
+                </div>
+            </div>    
+                
+            
             
 <div class="row" style="height: 25px;">
 </div>
             
-
+  <span class="lomelin-text11">Ubicación.</span>
+            <br>
+        
+            
+ <div class="row" style="height: 25px;">
+</div>
+      
+            
+            
 <img src="{{ asset('images/map1.png') }}" style="width:100%">
             
-            
+            <div class="row" style="height: 45px;">
+</div>
             
             
             
