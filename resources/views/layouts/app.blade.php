@@ -232,7 +232,14 @@
 		$('.pop').on('click', function() {
 			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
                 return false;        
-		});		
+		});
+                
+                $('.collapse').on('show.bs.collapse', function () {
+    $('.collapse.in').each(function(){
+        $(this).collapse('hide');
+    });
+  });
+  
          });
         
         </script>

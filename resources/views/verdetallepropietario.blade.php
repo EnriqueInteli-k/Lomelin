@@ -81,10 +81,8 @@
                                 
                             <div class="col-md-6 col-lg-5 stretch-card">
                                 <div class="card text-white border-0 bg-secondary">
-                                    <div class="card-body" style="background-color: white;">
-                                            
-                                            
-                                            <p class="card-description jsgrid-align-left lomelin-text25">{{$title }}</p>
+                                    <div class="card-body" style="background-color: white; padding: 0px 0px;">
+                                             <p class="card-description jsgrid-align-left lomelin-text25">{{$title }}</p>
                                              <img src="{{ asset('images/place.png') }}" style="width: 18px; height: 24px;">
                                             <span class="jsgrid-align-left lomelin-text24">{{$direccion->address1 }}, {{$direccion->dependent_locality }}</span>
                                             
@@ -93,22 +91,54 @@
                                             <hr style="width: 2; min-width: 2;" class="hr-gray1"/>
                                             <div class="row">
                                                 <div class="col-md-4 grid-margin stretch-card">
-                                                    <button type="button" class="btn btn-outline-secondary">Descripción</button>
+                                                    <button type="button" href="#descripcion" class="btn btn-outline-secondary" data-toggle="collapse">Descripción</button>
                                                 </div>
                                                 <div class="col-md-4 grid-margin stretch-card">
-                                                         <button type="button" class="btn btn-outline-secondary">Servicios</button>    
+                                                         <button type="button" href="#servicios" class="btn btn-outline-secondary" data-toggle="collapse">Servicios</button>    
                                                 </div>
                                                 <div class="col-md-4 grid-margin stretch-card">
                                                          <button type="button" class="btn btn-outline-secondary">Otros</button>    
                                                 </div>
                                             </div>
                                             
-                                             <div class="row">
+                                             <div class="row overflow-auto"  style="width: 100%; height: 100px;">
                                                  <div class="col-md-12 grid-margin stretch-card">
-                                                     <span class="jsgrid-align-left lomelin-text24">
-                                                         {!! $body !!}
-                                                     </span>
+                                                      <div class="card-body" style="background-color: white; padding: 0px 0px;">
+                                                          <div id="descripcion" class="collapse in">
+                                                               <span class="lomelin-text24">
+                                                             {!! $body !!}
+                                                          </span>
+                                                         </div>
                                                      
+                                                         <div id="servicios" class="collapse in">
+                                                         
+                                                             <div class="row">
+                                                                 
+                                                                 <div class="col-sm-6">
+                                                                     <input type="checkbox" name="servicio1" value="bano"><span class="lomelin-text24">Baño</span><br>
+                                                                      <input type="checkbox" name="servicio2" value="jardin"><span class="lomelin-text24">Jardin</span><br>
+                                                                      <input type="checkbox" name="servicio3" value="estacionamiento" checked><span class="lomelin-text24">Est.</span><br> 
+                                                                      <input type="checkbox" name="servicio4" value="balcon" checked><span class="lomelin-text24">Balcón</span><br> 
+                                                                 </div>
+                                                                 
+                                                                 <div class="col-sm-6">
+                                                                     <input type="checkbox" name="servicio5" value="recepcion"><span class="lomelin-text24">Recepción</span><br>
+                                                                      <input type="checkbox" name="servicio6" value="seguridad"><span class="lomelin-text24">Seguridad</span><br>
+                                                                      <input type="checkbox" name="servicio7" value="gimnasio" checked><span class="lomelin-text24">Gimnasio</span><br> 
+                                                                      <input type="checkbox" name="servicio8" value="cocina" checked><span class="lomelin-text24">Cocina</span><br> 
+                                                                 </div>
+                                                                 
+                                                                 
+                                                                 
+                                                             </div>  
+                                                             
+                                                             
+                                                         </div>
+                                                     
+                                                         
+                                      
+                                                     
+                                                 </div>  
                                                  </div>
                                                  
                                              </div>

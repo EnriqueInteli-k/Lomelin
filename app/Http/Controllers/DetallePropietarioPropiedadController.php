@@ -63,8 +63,7 @@ class DetallePropietarioPropiedadController extends Controller
         $dir = $attributos['field_direccion'];
         $procesado = $body['processed'];
         
-        
-        
+                
         $cur_direccion = new direccion();
         $cur_direccion->address1 = $dir['address_line1'];
         $cur_direccion->address2 = $dir['address_line2'];
