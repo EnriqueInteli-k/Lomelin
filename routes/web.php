@@ -41,7 +41,10 @@ Route::get('resultado', 'ResultadoController@index')->name('resultado');
 
 Route::get('verPropiedad/{id}',['uses' =>'DetallePropiedadController@verPropiedad'])->name('verPropiedad'); 
 Route::get('getPropiedades/{id}',['uses' =>'ListadoPropiedadesController@ObtenTipoPropiedad'])->name('getPropiedades'); 
+Route::get('verPropiedadPropietario/{id}',['uses' =>'DetallePropietarioPropiedadController@verPropiedad'])->name('verPropiedadPropietario'); 
 
+
+Route::get('verPropiedades',['uses' =>'ListadoPropietarioController@ObtenPropiedades'])->name('verPropiedades'); 
 
 
 

@@ -154,6 +154,29 @@
 }
 
 
+.lomelin-text23 {
+    font-family: Arial;
+    font-size: 16px;
+    color: #458DE2;
+    font-weight: normal;
+}
+
+.lomelin-text24 {
+    font-family: Arial;
+    font-size: 18px;
+    color:#464646;
+    font-weight: normal;
+}
+
+.lomelin-text25 {
+    font-family: Arial;
+    font-size: 22px;
+    color:#464646;
+    font-weight: bold;
+}
+
+
+
 .white-background {
     background: White;
 }
@@ -242,3 +265,14 @@
   border-radius: 0;   
 }
     
+
+.custom-scrollbar1 {
+position: relative;
+height: 200px;
+overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+display: block;
+}
+
