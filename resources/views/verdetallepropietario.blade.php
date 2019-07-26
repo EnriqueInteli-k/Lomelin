@@ -74,7 +74,7 @@
                             <div class="col-md-6 col-lg-7 stretch-card">
                                 <div class="card text-white border-0 bg-secondary">
                                     
-                                     <img class="card-img" src="{{ asset("$imagen") }}" style ="width: 100%; height: 80%;" alt="banner image"/>
+                                     <img class="card-img" src="{{ asset("$imagen") }}" style ="width: 100%; height: auto;" alt="banner image"/>
                              
                             </div>
                             </div>     
@@ -156,9 +156,11 @@
                                 <div class="card text-white border-0">
                                     <div class="row">
                                         <div class="col-md-2">
-                                            <div class="row" style="height:20px"></div>
-                                            <div class="row" style="height:20px"></div>
-                                            <div class="row" style="height:20px"></div>
+                                           
+                                             <div class="row">
+                                                <button type="button" class="btn btn-ls btn-block btn-outline-light text-left">PM Cliente</button>
+                                            </div>
+                                        <div class="row" style="height:20px"></div>
                                           
                                             <div class="row">
                                                 <button type="button" class="btn btn-ls btn-block btn-outline-light text-left">Constructora</button>
@@ -181,7 +183,7 @@
                                             </div>                                             
                                         </div>
                                         <div class="col-md-6">
-                                            <img class="card-img h-100 rounded-0" src="{{ asset("$imagen") }}" alt="Card image">
+                                            <img class="card-img rounded-0" src="{{ asset("$imagen") }}" alt="Card image" style ="width: 100%; height: auto;">
                                         </div>
                                         <div class="col-md-4">
                                             <div class="row">

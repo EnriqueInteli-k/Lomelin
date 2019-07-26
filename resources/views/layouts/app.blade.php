@@ -4,7 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="csfr-token" content="{{ csrf_token() }}"
+        <meta name="csfr-token" content="{{ csrf_token() }}">
         <title>Lomelin services</title>
         <!-- plugins:css -->
         
@@ -47,18 +47,15 @@
                                 </li>
                             </ul>
                             <button class="navbar-toggler align-self-center" type="button" data-toggle="minimize">
-</button>
+                                <span class="icon-menu text-white"></span>
+                            </button>
                         </div>
                     </div>
                     @else
                   <div class="container d-flex flex-row h-100">
-  <div class="text-center navbar-brand-wrapper d-flex align-items-top">
-                            <a class="navbar-brand brand-logo" href="/">
-                                <img src="{{ asset('images/logo1.png') }}" alt="logo"/>
-                            </a>
-                            <a class="navbar-brand brand-logo-mini" href="{{ route('home')}}">
-                                <img src="{{ asset('images/logo1.svg') }}" alt="logo"/>
-                            </a>
+             <div class="text-center navbar-brand-wrapper d-flex align-items-top">
+                           
+                           
                         </div>
                       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
                             <ul class="navbar-nav navbar-nav-right mr-0">
@@ -90,18 +87,19 @@
                     
                     @endguest
                 </div>
-                <div class="nav-bottom" style="height: 117px;">
+                
+                
+                <div class="nav-bottom" style="height: 60px;">
                 <div class="container d-flex flex-row h-100">
 
-                          <ul class="nav" style="width:285px;">
+                          <ul class="nav navbar-nav" style="width:220px;">
                           
-                            <li class="nav-item" style="width:245px; height:117px;">
+                            <li class="nav-item">
+                                
                             <a class="navbar-brand brand-logo" href="{{ route('home')}}">
-                                <img src="{{ asset('images/logo1.png') }}" alt="logo"/>
+                                <img src="{{ asset('images/logo1.png') }}" alt="logo" style="height: 50px; width: auto;"/>
                             </a>
-                            <a class="navbar-brand brand-logo-mini" href="{{ route('home')}}">
-                                <img src="{{ asset ('images/logo-mini.svg') }}" style="color: blue;" alt="logo"/>
-                            </a>
+                            
                             </li>
                 
 
@@ -109,8 +107,8 @@
 
                      @guest
                     
-                        <ul class="nav navbar-nav">
-                        <li class="dropdown" style="line-height: 117px;">
+                     <ul class="nav navbar-nav" style="display: inline-block;">
+                        <li class="dropdown" style="line-height: 60px;">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle btn btn-outline-secondary">Tipo de adquisición</a> 
                             <ul class="dropdown-menu">
                 <li><a href="#" class="btn btn-outline-secondary" style="width: 100%;">Venta</a> </li>
@@ -121,14 +119,14 @@
                         </ul>
 
                         <ul class="nav">
-                        <li class="nav-item" style="line-height: 117px;">
+                        <li class="nav-item" style="line-height: 60px;">
                           <button type="button" class="btn btn-outline-secondary">Dónde</button>
                         </li>
                         <li class="nav-item" style="width:5px;"></li>
                         </ul>
 
                         <ul class="nav navbar-nav">
-                        <li class="dropdown" style="line-height: 117px;">
+                        <li class="dropdown" style="line-height: 60px;">
                            <a href="#" data-toggle="dropdown" class="dropdown-toggle btn btn-outline-secondary"> Propiedad </a> 
                            <ul class="dropdown-menu">
                 <li><a href="{{ route('getPropiedades', 1 ) }}" class="btn btn-outline-secondary" style="width: 100%;">Casa</a> </li>
@@ -143,27 +141,27 @@
                         </ul>
 
                         <ul class="nav">
-                        <li class="nav-item" style="line-height: 117px;">
+                        <li class="nav-item" style="line-height: 60px;">
                           <button type="button" class="btn btn-outline-secondary">Precio</button>
                         </li>
                         <li class="nav-item" style="width:5px;"></li>
                         </ul>
 
                         <ul class="nav">
-                        <li class="nav-item" style="line-height: 117px;">
+                        <li class="nav-item" style="line-height: 60px;">
                           <button type="button" class="btn btn-outline-secondary">Instalaciones</button>
                         </li>
                         <li class="nav-item" style="width:5px;"></li>
                         </ul>
                         <ul class="nav">
-                        <li class="nav-item" style="line-height: 117px;">
+                        <li class="nav-item" style="line-height: 60px;">
                           <button type="button" class="btn btn-outline-secondary">Extensión</button>
                         </li>
                         <li class="nav-item" style="width:5px;"></li>
                         </ul>
 
                         <ul class="nav">
-                        <li class="nav-item" style="line-height: 117px;">
+                        <li class="nav-item" style="line-height: 60px;">
                             
                         <a href="{{ route('login')}}" class="btn btn-success btn-fw">Sistema referidos</a>
                         </li>
@@ -171,20 +169,20 @@
  @else
  
                         <ul class="nav">
-                        <li class="nav-item" style="line-height: 117px;">
+                        <li class="nav-item" style="line-height: 60px;">
                             
                         <a href="{{ route('dashboard')}}" class="btn btn-outline-secondary">Dashboard</a>
                         </li>
                         </ul>
  
  <ul class="nav">
-     <li class="nav-item" style="line-height: 117px;">
+     <li class="nav-item" style="line-height: 32px;">
          <div style="width: 48px;"></div>
      </li>
  </ul>
  
                     <ul class="nav">
-                        <li class="nav-item" style="line-height: 117px;">
+                        <li class="nav-item" style="line-height: 60px;">
                             
                         <a href="{{ route('perfil')}}" class="btn btn-outline-secondary">Perfil</a>
                         </li>

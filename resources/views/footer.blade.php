@@ -1,4 +1,4 @@
-<div class="w-100 clearfix" style="background: #4cbd94; height: 340px;">
+<div class="w-100 clearfix" style="background: #4cbd94; height: auto;">
     
     <div class="row" style="height: 45px;">
 </div>

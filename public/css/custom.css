@@ -4,12 +4,26 @@
     width: 100%;
 }
 
+
+@media screen and (min-width: 601px) {
 .lomelin-text1 {
     font-family: Helvetica, Helvetica Neue;
     font-size: 60px;
     color: #123E8F;
     font-weight: bold;
 }
+}
+
+@media screen and (min-width: 601px) {
+.lomelin-text1 {
+    font-family: Helvetica, Helvetica Neue;
+    font-size: 40px;
+    color: #123E8F;
+    font-weight: bold;
+}
+   
+}
+
 
 .lomelin-text2 {
     font-family: Arial;
