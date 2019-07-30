@@ -52,7 +52,7 @@
          <div class="form-group">
                     <label for="exampleFormControlSelect2" class="lomelin-text15">Tipo de usuario</label>
                     
-                    {!! Form::select('id',$tiposUsuarios,1,['class'=>'form-control','id'=>'tipo','name'=>'tipo' ]); !!}
+                    {!! Form::select('id',$tiposUsuarios,1,['class'=>'form-control','id'=>'type','name'=>'type' ]); !!}
                    
                   </div>
         

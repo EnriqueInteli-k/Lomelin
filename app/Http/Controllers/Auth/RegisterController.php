@@ -34,7 +34,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/perfil';
 
     /**
      * Create a new controller instance.
@@ -93,6 +93,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'username' => $data['username'],
+             'type' => $data['type'],
             'password' => Hash::make($data['password']),
         ]);
     }
@@ -109,6 +110,7 @@ $password = bcrypt($request->get('password'));
          $user->name = $request->get('name');
           $user->username = $username;
           $user->email = $request->get('email');
+          $user->type = $request->get('type');
           $user->password = $password;
           $user->save();
 

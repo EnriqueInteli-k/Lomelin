@@ -27,7 +27,7 @@
                     
                   <form class="login-form" method="POST" action="{{route('register') }}">
                       {{ csrf_field() }}
-                      <input type ="hidden" id ="tipo" name ="tipo" value="3">              
+                      <input type ="hidden" id ="type" name ="type" value="3">              
       <div class="login-wrap">
         <p class="login-img"><i class="icon_lock_alt"></i></p>
        <div class="form-group">

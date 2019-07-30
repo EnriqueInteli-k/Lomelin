@@ -33,12 +33,11 @@
   <div class="container-scroller">
             <!-- partial:../../partials/_horizontal-navbar.html -->
             <nav class="navbar horizontal-layout col-lg-12 col-12 p-0">
-                <div class="nav-top flex-grow-1" style="background: #004AAB; height: 68px;">
+                <div class="nav-top flex-grow-1" style="background: #004AAB; height: 48px;">
                     @guest
-                    <div class="container d-flex flex-row h-100">
-                      
-                        <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-                            <ul class="navbar-nav navbar-nav-right mr-0">
+                       
+                        <div class="navbar navbar navbar-menu-wrapper ml-auto">
+                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item nav-profile">
                                     <a class="nav-link" href="{{ route('login')}}"> <span class="" style="font-family: Helvetica; font-size: 22px; color: white;">Log-in</span>  </a>
                                 </li>
@@ -51,41 +50,41 @@
                                 <span class="icon-menu text-white"></span>
                             </button>
                         </div>
-                    </div>
+                  
                     @else
-                  <div class="container d-flex flex-row h-100">
-             <div class="text-center navbar-brand-wrapper d-flex align-items-top">
-                           
-                           
-                        </div>
-                      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-                            <ul class="navbar-nav navbar-nav-right mr-0">
+                 
+                      
+                      <div class="mb-1 navbar navbar navbar-menu-wrapper">
+                           <ul class="navbar-nav mr-auto">
                                 <li class="nav-item nav-profile">
-                                    <a class="nav-link" href="{{ route('perfil')}}">
-                                        <span class="nav-profile-text">{{ Auth::user()->name }}</span>
-                                        <img src="{{ asset('images/face1.png') }}" class="rounded-circle" alt="profile"/>
-                                    </a>
+                            <span class="navbar-text white-text">
+                                Email:{{ Auth::user()->email }} &nbsp;&nbsp; Tel:
+                            </span>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown"> <i class="icon-bell"></i> </a>
-                                   
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> <i class="icon-logout"></i> </a>
+                                
+              
+                            </ul>
+                          
+                          <ul class="navbar-nav ml-auto">
+                              
+                                 
+                                   <li class="nav-item">
+                                       <a class="nav-link" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><span class="" style="font-family: Helvetica; font-size: 18px; color: white;">Log-out</span>&nbsp;&nbsp; <i class="icon-logout"></i></a>
+                                    
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     {{ csrf_field() }}
                                     </form>
 
                                 </li>
+  
+              
                             </ul>
                             <button class="navbar-toggler align-self-center" type="button" data-toggle="minimize">
                                 <span class="icon-menu text-white"></span>
                             </button>
                         </div>
-		</div>
-
                     
-                    
+            
                     @endguest
                 </div>
                 
