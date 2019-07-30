@@ -1,8 +1,51 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="content-wrapper">
-                        <hr style="width: 2; min-width: 2;">
+   <div id="form1"  class="contact-form1">
+                <div class="card">
+                    <br>
+                      <span class="lomelin-text11">Contacta a un asesor</span>
+                
+                  
+                <img class="card-img-top" src="{{ asset('images/lomelin_logo1.png') }}" alt="Card image cap1" style="width:280px; height: auto;">
+                <div class="card-body">
+                    
+                    <p class="lomelin-text13"><img  src="{{ asset('images/phone_icon.png') }}" alt="Telefóno">(55) 2581-0350</p>
+                  
+                     <form class="forms-sample">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                    </div>
+                    
+                  <div class="form-group">
+                      <input type="text" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="telefono" placeholder="Número de teléfono">
+                    </div>
+                    <div class="form-group">
+                    <textarea class="form-control" id="comentarios" rows="4"></textarea>     
+                    
+                    <div class="row" style="height: 20px;"></div>
+                    
+                    <div class="row">
+                    <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary mr-2" style="width: 100%;" >Enviar</button>
+                    </div>
+                    </div>
+                    
+                    
+                    </div>
+                    
+                     </form>
+                    
+                </div>
+              </div>
+</div> 
+
+<div class="content-wrapper" style="padding: 0px 0px;">
+                        
                         <img src="{{ asset('images/house2.png') }}" style="width:100%; height: auto;">
 
 

@@ -55,6 +55,15 @@ class RegisterController extends Controller
 
    }
 
+   
+    public function showRegistrationFormReferidos()
+   {
+
+     return view('auth.register_formReferidos');
+
+   }
+
+   
     /**
      * Get a validator for an incoming registration request.
      *

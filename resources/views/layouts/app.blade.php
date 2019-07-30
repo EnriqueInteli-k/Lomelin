@@ -29,7 +29,8 @@
     </head>
 
 <body>
-        <div class="container-scroller">
+    
+  <div class="container-scroller">
             <!-- partial:../../partials/_horizontal-navbar.html -->
             <nav class="navbar horizontal-layout col-lg-12 col-12 p-0">
                 <div class="nav-top flex-grow-1" style="background: #004AAB; height: 68px;">
@@ -163,7 +164,11 @@
                         <ul class="nav">
                         <li class="nav-item" style="line-height: 60px;">
                             
-                        <a href="{{ route('login')}}" class="btn btn-success btn-fw">Sistema referidos</a>
+                            <button type="button" class="btn btn-success btn-fw" data-toggle="modal" data-target="#exampleModalCenter">
+                    Sistema referidos
+                            </button>
+                            
+                       
                         </li>
                         </ul>
  @else
@@ -196,10 +201,14 @@
                     
                 </div>
             </nav>
+            
+     
+             
             <!-- partial -->
             <div class="container-fluid">
                 <div class="main-panel">
                     
+                  
                      @yield('content')
                     
                     
@@ -208,11 +217,63 @@
                     
                     @yield('footer')
                     <!-- partial -->
+                    
                 </div>
                 <!-- main-panel ends -->
             </div>
             <!-- page-body-wrapper ends -->
         </div>
+    
+        <!-- login model -->
+    
+    <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+          <span class="lomelin-text5">Inicie sesión o registre su cuenta</span>
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+                    
+    <form class="login-form" method="POST" action="{{ route('login') }}">
+          {{ csrf_field() }}
+      <div class="login-wrap">
+        <p class="login-img"><i class="icon_lock_alt"></i></p>
+       <div class="form-group">
+          <span class="input-group-addon"><i class="icon_profile"></i></span>
+           <label for="username" class="lomelin-text15">Usuario / Email</label>
+          <input type="text" class="form-control" placeholder="Usuario" id="username" name="username" autofocus>
+        </div> 
+        <br>
+        <div class="form-group">
+          <span class="input-group-addon"><i class="icon_key_alt"></i></span>
+          <label for="password" class="lomelin-text15">Contraseña</label>
+          <input type="password" class="form-control" placeholder="Contraseña" id="password" name="password">
+         </div>
+        <br>
+        <label class="checkbox">
+                <input type="checkbox" value="remember-me"> Recordarme
+                <span class="pull-right"> <a href="#"> Olvide mi contraseña?</a></span>
+            </label>
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+      
+      </div>
+    </form>
+                  <br>
+                  <br>
+  <p class="card-description">Nuevo usuario: <a class=links" href="{{ route('register_referidos')}}"> Registrate aqui.</a>
+                        </p>                        
+                  
+   
+      </div>
+    
+    </div>
+  </div>
+</div>
+    
         <!-- container-scroller -->
         <!-- plugins:js -->
         <script src="{{ asset('vendors/js/vendor.bundle.base.js') }}"></script>

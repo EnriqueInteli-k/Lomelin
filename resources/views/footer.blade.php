@@ -24,7 +24,7 @@
 
 <div class = "row">
 <div clas="col-md-6">
-<p class="lomelin-text9"><input type="text" class="form-control" sytle="margin-right: -15px;" id="exampleInputUsername1" placeholder="email"></p>
+<p class="lomelin-text9"><input type="text" class="form-control" style="margin-left: 12px; margin-right: 0px;" id="exampleInputUsername1" placeholder="email"></p>
 </div>    
 </div>
 

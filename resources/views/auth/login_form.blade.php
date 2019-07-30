@@ -26,7 +26,7 @@
         <p class="login-img"><i class="icon_lock_alt"></i></p>
        <div class="form-group">
           <span class="input-group-addon"><i class="icon_profile"></i></span>
-           <label for="username" class="lomelin-text15">Usuario</label>
+           <label for="username" class="lomelin-text15">Usuario / Email</label>
           <input type="text" class="form-control" placeholder="Usuario" id="username" name="username" autofocus>
         </div> 
         <br>
