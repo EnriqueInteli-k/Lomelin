@@ -73,8 +73,10 @@ Route::get('verPropiedades',['uses' =>'ListadoPropietarioController@ObtenPropied
 
 
 
-//Route::get('deleteHerramienta/{id}',['uses' =>'HerramientasController@deleteHerramienta'])->name('deleteHerramienta'); 
- 
- 
+//Func
+Route::post('agregaReferidor', ['uses' =>'ReferidoController@agregar'])->name('agregaReferidor');
+
+
+
 
 

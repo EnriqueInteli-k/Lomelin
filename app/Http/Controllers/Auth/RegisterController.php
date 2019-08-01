@@ -111,6 +111,7 @@ $password = bcrypt($request->get('password'));
           $user->username = $username;
           $user->email = $request->get('email');
           $user->type = $request->get('type');
+          $user->phone = $request->get('phone');
           $user->password = $password;
           $user->save();
 

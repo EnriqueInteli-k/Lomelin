@@ -245,6 +245,29 @@
     font-weight: bold;
 }
 
+.lomelin-text26 {
+    font-family: Arial;
+    font-size: 16px;
+    color:black;
+    font-weight: normal;
+}
+
+
+.lomelin-text27 {
+    font-family: Arial;
+    font-size: 18px;
+    color:#123E8F;
+    font-weight: bold;
+}
+
+.lomelin-text28 {
+    font-family: Arial;
+    font-size: 18px;
+    color:#72CBAA;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
 
 
 .white-background {

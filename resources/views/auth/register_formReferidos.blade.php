@@ -50,6 +50,11 @@
           <input type="text" class="form-control" placeholder="email" id="email" name="email" autofocus required>
         </div> 
            
+         <div class="form-group">
+          <span class="input-group-addon"><i class="icon_profile"></i></span>
+           <label for="phone" class="lomelin-text15">Teléfono:</label>
+          <input type="text" class="form-control" placeholder="Teléfono" id="phone" name="phone" autofocus required>
+        </div> 
         
         
         <div class="form-group">

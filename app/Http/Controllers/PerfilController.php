@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
+use App\Referido;
 
 class PerfilController extends Controller
 {
@@ -15,7 +16,9 @@ class PerfilController extends Controller
           
           if($user->type == 3)
           {
-              return view('perfil_referidor');
+              $referidos = Referido::where('id_user','=', $user->id)->get();
+              //$referidos = Referido::All();
+              return view('perfil_referidor',['referidos' => $referidos]);
           }
           
           else
