@@ -78,6 +78,8 @@ Route::post('agregaReferidor', ['uses' =>'ReferidoController@agregar'])->name('a
 Route::post('modifyUser', ['uses' =>'UserController@modificar'])->name('modifyUser');
 
 Route::get('addProperty', 'PropiedadController@agregar')->name('addProperty');
+Route::post('agregarPropiedad', ['uses' =>'PropiedadController@agrega_propiedad'])->name('agregarPropiedad');
+
 
 
 

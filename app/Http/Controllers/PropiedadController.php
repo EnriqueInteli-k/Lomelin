@@ -17,4 +17,11 @@ class PropiedadController extends Controller
     }
     
     
+    
+    public function agrega_propiedad()
+    {
+        return view('dashboard');
+        
+    }
+    
 }

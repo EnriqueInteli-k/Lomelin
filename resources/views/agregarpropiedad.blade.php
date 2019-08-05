@@ -41,6 +41,9 @@ function init() {
 
     <div class="row" style="height: 20px;"></div>
     
+       <form class="form-sample" method="POST" action="{{ route('agregarPropiedad') }}" name="agregarPropiedad" id="agregarPropiedad">
+         {{ csrf_field() }}                          
+    
     <div class="row">
        <div class="col-md-8">
         <div class="form-group" style="padding: 0px 0px">
@@ -70,6 +73,45 @@ function init() {
  
     <div class="row" style="height: 20px;"></div>
  
+    
+     <div class="row" style="height: 20px;"></div>
+ 
+  <div class="row">
+      <div class="col-md-6 col-lg-12 grid-margin stretch-card">
+         <div class="card text-white" style="background-color: white; background: white;">
+              <div class="card-body" style="padding: 0px 0px;">
+                                    
+     <div class="row">
+                                            <div class="col-md-2">
+                                            <span class="lomelin-text4">Imagenes</span>
+                                            </div>
+     </div>
+                  
+                  <div class="row">
+                      <div class="col-md-12">
+                            <div id='image-holder2' style='display: inline-block;width:220px;height:280px;border:1px solid black;'></div>
+                      </div>
+                  </div>                  
+                  
+                  
+                   <div class="row" >
+                      <div class="col-md-4">
+                          <input type="file" class ="form-control" id="imageFotoUpload2" multiple="">
+                      </div>
+                  </div>        
+                  
+                  
+     </div>
+         </div>
+          
+      </div>
+         
+     </div>  
+          
+    
+    
+    
+    
     
      <div class="row">
       <div class="col-md-6 col-lg-12 grid-margin stretch-card">
@@ -237,6 +279,64 @@ function init() {
     
     <div class="row" style="height: 20px;"></div>
  
+    <div class="row">
+      <div class="col-md-6 col-lg-12 grid-margin stretch-card">
+         <div class="card text-white" style="background-color: white; background: white;">
+              <div class="card-body" style="padding: 0px 0px;">
+                                    
+     <div class="row">
+                                            <div class="col-md-2">
+                                            <span class="lomelin-text4">Tamaño</span>
+                                            </div>
+     </div>
+        
+ 
+                  
+ <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-12 col-form-label lomelin-text27 control-label" style="padding-left: 0px;">Largo de la propiedad (mts)</label>
+                                                        <div class="col-sm-12" style="padding-left: 0px;">
+                                                            <input type="text" class="form-control lomelin-text19" style="padding-left: 0px;" value="" placeholder="Largo de la propiedad">
+                                                        </div>
+                                                    </div>
+                                                </div>
+     
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-12 col-form-label lomelin-text27 control-label" style="padding-left: 0px;">Ancho de la propiedad (mts)</label>
+                                                        <div class="col-sm-12" style="padding-left: 0px;">
+                                                            <input type="text" class="form-control lomelin-text19" style="padding-left: 0px;" value="" placeholder="Ancho de la propiedad">
+                                                        </div>
+                                                    </div>
+                                                </div>
+ </div>
+  
+                
+  
+  
+<div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-12 col-form-label lomelin-text27 control-label" style="padding-left: 0px;">Superficie Total (mts2)</label>
+                                                        <div class="col-sm-12" style="padding-left: 0px;">
+                                                            <input type="text" class="form-control lomelin-text19" style="padding-left: 0px;" value="" placeholder="Superficie total">
+                                                        </div>
+                                                    </div>
+                                                </div>
+     
+       
+ </div>                  
+  
+      </div> 
+     </div>
+      </div>
+      
+     </div>
+    
+     <div class="row" style="height: 20px;"></div> 
+    
+    
     
      <div class="row">
       <div class="col-md-6 col-lg-12 grid-margin stretch-card">
@@ -276,13 +376,264 @@ function init() {
       </div>
          
      </div>    
+ <div class="row" style="height: 20px;"></div>
+ 
+ <div class="row">
+      <div class="col-md-6 col-lg-12 grid-margin stretch-card">
+         <div class="card text-white" style="background-color: white; background: white;">
+              <div class="card-body" style="padding: 0px 0px;">
+                                    
+     <div class="row">
+                                            <div class="col-md-2">
+                                            <span class="lomelin-text4">Constructora</span>
+                                            </div>
+     </div>
     
-    
-          
-          
-          
+     <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-12 col-form-label lomelin-text27 control-label" style="padding-left: 0px;">Nombre de la constructora</label>
+                                                        <div class="col-sm-12" style="padding-left: 0px;">
+                                                            <input type="text" class="form-control lomelin-text19" style="padding-left: 0px;" value="" placeholder="Nombre de la constructora">
+                                                        </div>
+                                                    </div>
+                                                </div>
+ </div>
+ 
+   <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-12 col-form-label lomelin-text27 control-label" style="padding-left: 0px;">Dirección</label>
+                                                        <div class="col-sm-12" style="padding-left: 0px;">
+                                                            <input type="text" class="form-control lomelin-text19" style="padding-left: 0px;" value="" placeholder="Dirección de la constructora">
+                                                        </div>
+                                                    </div>
+                                                </div>
+ </div>
+  
+<div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-12 col-form-label lomelin-text27 control-label" style="padding-left: 0px;">Teléfono</label>
+                                                        <div class="col-sm-12" style="padding-left: 0px;">
+                                                            <input type="text" class="form-control lomelin-text19" style="padding-left: 0px;" value="" placeholder="Teléfono">
+                                                        </div>
+                                                    </div>
+                                                </div>
+     
        
+ </div>                  
+ 
+ <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-12 col-form-label lomelin-text27 control-label" style="padding-left: 0px;">Página WEB</label>
+                                                        <div class="col-sm-12" style="padding-left: 0px;">
+                                                            <input type="text" class="form-control lomelin-text19" style="padding-left: 0px;" value="" placeholder="Dirección de la página web">
+                                                        </div>
+                                                    </div>
+                                                </div>
+ </div>
+                  
+                  
+                  
+       
+              </div>
+         </div>
+          
+      </div>
+         
+     </div>    
+
+ <div class="row" style="height: 20px;"></div>
+ 
+  <div class="row">
+      <div class="col-md-6 col-lg-12 grid-margin stretch-card">
+         <div class="card text-white" style="background-color: white; background: white;">
+              <div class="card-body" style="padding: 0px 0px;">
+                                    
+     <div class="row">
+                                            <div class="col-md-2">
+                                            <span class="lomelin-text4">Arquitecto</span>
+                                            </div>
+     </div>
     
+     <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-12 col-form-label lomelin-text27 control-label" style="padding-left: 0px;">Nombre del arquitecto(a)</label>
+                                                        <div class="col-sm-12" style="padding-left: 0px;">
+                                                            <input type="text" class="form-control lomelin-text19" style="padding-left: 0px;" value="" placeholder="Nombre del arquitecto(a)">
+                                                        </div>
+                                                    </div>
+                                                </div>
+ </div>
+ 
+   
+  
+<div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-12 col-form-label lomelin-text27 control-label" style="padding-left: 0px;">Teléfono</label>
+                                                        <div class="col-sm-12" style="padding-left: 0px;">
+                                                            <input type="text" class="form-control lomelin-text19" style="padding-left: 0px;" value="" placeholder="Teléfono">
+                                                        </div>
+                                                    </div>
+                                                </div>
+     
+       
+ </div>                  
+ 
+           
+                  
+                  
+       
+              </div>
+         </div>
+          
+      </div>
+         
+     </div>  
+          
+          
+ <div class="row" style="height: 20px;"></div>
+ 
+  <div class="row">
+      <div class="col-md-6 col-lg-12 grid-margin stretch-card">
+         <div class="card text-white" style="background-color: white; background: white;">
+              <div class="card-body" style="padding: 0px 0px;">
+                                    
+     <div class="row">
+                                            <div class="col-md-2">
+                                            <span class="lomelin-text4">Marketing</span>
+                                            </div>
+     </div>
+    
+     <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-12 col-form-label lomelin-text27 control-label" style="padding-left: 0px;">Nombre de la empresa</label>
+                                                        <div class="col-sm-12" style="padding-left: 0px;">
+                                                            <input type="text" class="form-control lomelin-text19" style="padding-left: 0px;" value="" placeholder="Nombre de la empresa">
+                                                        </div>
+                                                    </div>
+                                                </div>
+ </div>
+ 
+   
+  
+<div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-12 col-form-label lomelin-text27 control-label" style="padding-left: 0px;">Teléfono</label>
+                                                        <div class="col-sm-12" style="padding-left: 0px;">
+                                                            <input type="text" class="form-control lomelin-text19" style="padding-left: 0px;" value="" placeholder="Teléfono">
+                                                        </div>
+                                                    </div>
+                                                </div>
+     
+       
+ </div>                  
+ 
+           
+                  
+                  
+       
+              </div>
+         </div>
+          
+      </div>
+         
+     </div>  
+          
+ 
+ 
+ <div class="row" style="height: 20px;"></div>
+ 
+  <div class="row">
+      <div class="col-md-6 col-lg-12 grid-margin stretch-card">
+         <div class="card text-white" style="background-color: white; background: white;">
+              <div class="card-body" style="padding: 0px 0px;">
+                                    
+     <div class="row">
+                                            <div class="col-md-2">
+                                            <span class="lomelin-text4">Comercialización</span>
+                                            </div>
+     </div>
+    
+     <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-12 col-form-label lomelin-text27 control-label" style="padding-left: 0px;">Nombre de la empresa</label>
+                                                        <div class="col-sm-12" style="padding-left: 0px;">
+                                                            <input type="text" class="form-control lomelin-text19" style="padding-left: 0px;" value="" placeholder="Nombre de la empresa">
+                                                        </div>
+                                                    </div>
+                                                </div>
+ </div>
+ 
+   
+  
+<div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-12 col-form-label lomelin-text27 control-label" style="padding-left: 0px;">Teléfono</label>
+                                                        <div class="col-sm-12" style="padding-left: 0px;">
+                                                            <input type="text" class="form-control lomelin-text19" style="padding-left: 0px;" value="" placeholder="Teléfono">
+                                                        </div>
+                                                    </div>
+                                                </div>
+     
+       
+ </div>                  
+ 
+           
+                  
+                  
+       
+              </div>
+         </div>
+          
+      </div>
+         
+     </div>  
+          
+ 
+ 
+ <div class="row" style="height: 20px;"></div>
+ 
+  <div class="row">
+      <div class="col-md-6 col-lg-12 grid-margin stretch-card">
+         <div class="card text-white" style="background-color: white; background: white;">
+              <div class="card-body" style="padding: 0px 0px;">
+                                    
+     <div class="row">
+                                            <div class="col-md-2">
+                                            <span class="lomelin-text4">Socios Clave</span>
+                                            </div>
+     </div>
+                  
+<div class="row" style="height: 120px;"></div>                  
+                  
+     </div>
+         </div>
+          
+      </div>
+         
+     </div>  
+          
+ 
+ 
+ <div class="row">
+     <div class="col-md-10"></div>     
+     <div class="col-md-2">
+      <button class="btn btn-light" name ="save" id="save"><img src="{{ asset('images/save_icon.png') }}" disabled class="" width="48px" height="auto"></button>    
+         
+         
+     </div>
+ </div>   
+       
+       </form> 
 
 </div>    
     
@@ -300,6 +651,51 @@ function init() {
 
 
 @section('scripts')
-  
+ $('#save').on('click', function(event) {
+$('#agregarPropiedad').submit();
+}); 
+
+
+ $("#imageFotoUpload2").on('change', function () {
+
+     //Get count of selected files
+     var countFiles = $(this)[0].files.length;
+
+     var imgPath = $(this)[0].value;
+     var extn = imgPath.substring(imgPath.lastIndexOf('.') + 1).toLowerCase();
+     var image_holder = $("#image-holder2");
+     image_holder.empty();
+
+
+     if (extn === "gif" || extn === "png" || extn === "jpg" || extn === "jpeg") {
+
+            if (typeof (FileReader) !== "undefined") {
+
+
+             //loop for each file selected for uploaded.
+             for (var i = 0; i < countFiles; i++) {
+
+                 var reader = new FileReader();
+                 reader.onload = function (e) {
+                     
+                     $("<img />", {"src": e.target.result,"class": "thumb-image","style":"width:220px;height:280px"}).appendTo(image_holder);
+                     
+                     // $(image_holder).html("<img src='" + e.target.result + "' />");
+                       console.log($(image_holder).html());
+                     console.log("<img src='" + e.target.result + "'/>");
+                 };
+
+                 //image_holder.show();
+                 reader.readAsDataURL($(this)[0].files[i]);
+             }
+
+         } else {
+             alert("This browser does not support FileReader.");
+         }
+     } else {
+         alert("Pls select only images");
+     }
+ });
+
 
 @endsection
