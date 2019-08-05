@@ -31,15 +31,28 @@
                             <div class="col-md-6 col-lg-12 grid-margin stretch-card">
                                 <div class="card text-white border-0 bg-secondary">
                                     <div class="card-body">
-                                        <form class="form-sample">
-                                            <p class="card-description lomelin-text4">Perfil</p>
+                                        <form class="form-sample" method="POST" action="{{ route('modifyUser') }}" name="modifyUser" id="modifyUser">
+                                           {{ csrf_field() }}
+                                            <div class="row">
+                                            <div class="col-md-2">
+                                            <span class="card-description lomelin-text4">Perfil</span>
+                                            </div>
+                                                
+                                                <div class="col-md-8"></div>    
+                                                <div class="col-md-2">
+                                                    <button class="btn btn-light" name="edit" id="edit"><img src="{{ asset('images/edit_icon.png') }}" class="" width="22px" height="auto"></button>
+                                                    <button class="btn btn-light" disabled name ="save" id="save"><img src="{{ asset('images/save_icon.png') }}" disabled class="" width="22px" height="auto"></button>
+                                                </div>
+                                                
+                                            </div> 
+                                            
                                             <hr style="width: 2; min-width: 2;" class="hr-gray1"/>
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <div class="form-group row">
                                                         <label class="col-sm-3 col-form-label lomelin-text18 control-label">Nombre Completo</label>
                                                         <div class="col-sm-9">
-                                                            <input type="text" class="form-control lomelin-text19" value="{{ Auth::user()->name }}">
+                                                            <input type="text" disabled class="form-control lomelin-text19" value="{{ Auth::user()->name }}" name="nombre" id="nombre">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -47,7 +60,7 @@
                                                     <div class="form-group row">
                                                         <label class="col-sm-3 col-form-label lomelin-text18 control-label">Correo</label>
                                                         <div class="col-sm-9">
-                                                            <input type="text" class="form-control lomelin-text19" value = "{{ Auth::user()->email }}">
+                                                            <input type="text" disabled class="form-control lomelin-text19" value = "{{ Auth::user()->email }}" name="email" id="email">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -55,7 +68,7 @@
                                                     <div class="form-group row">
                                                         <label class="col-sm-3 col-form-label lomelin-text18 control-label">Puesto</label>
                                                         <div class="col-sm-9">
-                                                            <select class="form-control">
+                                                            <select disabled class="form-control" name="puesto" id="puesto">
                                                                 <option value='1'>Asesor comercial</option>
                                                                 <option value='2'>Gerente</option>
                                                                 <option value='3'>Asesor Tel.</option>
@@ -78,7 +91,7 @@
                                                     <div class="form-group row">
                                                         <label class="col-sm-3 col-form-label lomelin-text18 control-label">Telefóno</label>
                                                         <div class="col-sm-9">
-                                                            <input type="text" class="form-control lomelin-text19" value="3314522323">
+                                                            <input type="text" disabled class="form-control lomelin-text19" value="{{ Auth::user()->phone }}" name="phone" id="phone">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -86,7 +99,7 @@
                                                     <div class="form-group row">
                                                         <label class="col-sm-3 col-form-label lomelin-text18 control-label">Ubicación</label>
                                                         <div class="col-sm-9">
-                                                            <input type="text" class="form-control lomelin-text19" value="Zapopan, Jalisco">
+                                                            <input type="text" disabled class="form-control lomelin-text19" value="Zapopan, Jalisco" name="ubicacion1" id="ubicacion1">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -94,7 +107,7 @@
                                                     <div class="form-group row">
                                                         <label class="col-sm-3 col-form-label lomelin-text18 control-label">Estado</label>
                                                         <div class="col-sm-9">
-                                                            <select class="form-control">
+                                                            <select disabled class="form-control" name="estado" id="estado">
                                                                 <option value='Ciudad de México'>Ciudad de México</option>
                                                                 <option value='Aguascalientes'>Aguascalientes</option>
                                                                 <option value='Baja California'>Baja California</option>
@@ -153,5 +166,25 @@
                         </div>
                     </footer>
                  
+
+@endsection
+
+@section('scripts')
+
+$('#edit').on('click', function(event) {
+  event.preventDefault(); // To prevent following the link (optional)
+  $('#nombre').prop("disabled", false);
+  $('#phone').prop("disabled", false);
+  $('#puesto').prop("disabled", false);
+  $('#ubicacion1').prop("disabled", false);
+  $('#estado').prop("disabled", false);
+  $('#save').prop("disabled", false);
+  
+
+});
+
+$('#save').on('click', function(event) {
+$('#modifyUser').submit();
+});
 
 @endsection

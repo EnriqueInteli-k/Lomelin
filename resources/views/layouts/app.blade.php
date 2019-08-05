@@ -13,6 +13,8 @@
         <link href="{{ asset('vendors/css/vendor.bundle.base.css') }}" rel="stylesheet">
         <link href="{{ asset('vendors/css/vendor.bundle.addons.css') }}" rel="stylesheet">
         <link href="{{ asset('vendors/iconfonts/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('vendors/summernote/dist/summernote-bs4.css') }}" rel="stylesheet">
+         
 
         
         
@@ -277,9 +279,21 @@
         <!-- plugins:js -->
         <script src="{{ asset('vendors/js/vendor.bundle.base.js') }}"></script>
         <script src="{{ asset('vendors/js/vendor.bundle.addons.js') }}"></script>
+        <script src="{{ asset('vendors/summernote/dist/summernote-bs4.min.js') }}"></script>
         <script src="{{ asset('js/template.js') }}"></script>
         <script src="{{ asset('js/owl.carousel.js') }}"></script>
         <script>
+            
+            $(document).ready(function() {
+                $('#summernote').summernote({
+  height: 300,                 // set editor height
+  minHeight: null,             // set minimum height of editor
+  maxHeight: null,             // set maximum height of editor
+  focus: true                  // set focus to editable area after initializing summernote
+});
+            });
+            
+            
         $('.owl-carousel').owlCarousel({
             margin:10,
             items:3,
@@ -299,6 +313,9 @@
   });
   
          });
+        
+        
+          @yield('scripts')
         
         </script>
         <!-- endinject -->

@@ -109,8 +109,16 @@
                                 
                             <div class="col-md-6 col-lg-5 stretch-card">
                                 <div class="card text-white border-0 bg-secondary">
-                                    <div class="card-body" style="background-color: white;">
+                                    <div class="card-body" style="background-color: white; padding: 0px 0px;">
+                                        <div class ="row">
+                                            <div class="col-md-6 col-lg-10"></div>
+                                            <div class="col-md-6 col-lg-2">
+                                                <a href="{{route('addProperty') }}" class="btn btn-light" name="add_property" id="edit"><img src="{{ asset('images/house1.png') }}" class="" width="32px" height="auto"></a>
+                                            </div>
                                             
+                                        </div>    
+                                        
+                                        
                                             <div class ="row">
                                                <div class="col-md-6 col-lg-7">
                                             <span class="card-description jsgrid-align-left lomelin-text11">Proyectos Activos</span>
