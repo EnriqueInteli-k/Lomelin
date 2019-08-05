@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-/*
+
 class atributos
 {
     public $recamaras;
@@ -11,7 +11,7 @@ class atributos
     public $superficie;
     public $estacionamientos;
 }
-*/
+
 
 class direccion
 {
