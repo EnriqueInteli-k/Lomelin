@@ -32,7 +32,7 @@ function init() {
 
 <div class="content-wrapper">
      <div class="row">
-           <div class="col-md-2">
+           <div class="col-md-4">
             <span class="lomelin-text24">Agregar propiedad</span>
             </div>
                                                        
@@ -43,7 +43,7 @@ function init() {
     
     <div class="row">
        <div class="col-md-8">
-        <div class="form-group">
+        <div class="form-group" style="padding: 0px 0px">
           <label class="col-sm-3 col-form-label lomelin-text18 control-label">Titulo</label>
             <div class="col-sm-9">
                 <input type="text" class="form-control lomelin-text19" value="" name="titulo" id="titulo" placeholder="Titulo de la propiedad">
@@ -191,22 +191,14 @@ function init() {
      
        
  </div>                  
-                  
-                  
-                  
-      </div> 
-     </div>
-        </div>
-         </div>
-    
-    
+  
     
     <div class="row">
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label class="col-sm-12 col-form-label lomelin-text27 control-label" style="padding-left: 0px;">Latitud:</label>
                                                         <div class="col-sm-12" style="padding-left: 0px;">
-                                                            <input type="text" class="form-control lomelin-text19" style="padding-left: 0px;" value="" placeholder="" id="lat">
+                                                            <input type="text" disabled class="form-control lomelin-text19" style="padding-left: 0px;" value="" placeholder="" id="lat">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -215,7 +207,7 @@ function init() {
                                                     <div class="form-group">
                                                         <label class="col-sm-12 col-form-label lomelin-text27 control-label" style="padding-left: 0px;">Longitud:</label>
                                                         <div class="col-sm-12" style="padding-left: 0px;">
-                                                            <input type="text" class="form-control lomelin-text19" style="padding-left: 0px;" value="" placeholder="" id="lang">
+                                                            <input type="text" disabled class="form-control lomelin-text19" style="padding-left: 0px;" value="" placeholder="" id="lang">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -230,6 +222,67 @@ function init() {
  
 
 </div>
+                  
+                  
+                  
+                  
+                  
+                  
+      </div> 
+     </div>
+      </div>
+      
+     </div>
+          
+    
+    <div class="row" style="height: 20px;"></div>
+ 
+    
+     <div class="row">
+      <div class="col-md-6 col-lg-12 grid-margin stretch-card">
+         <div class="card text-white" style="background-color: white; background: white;">
+              <div class="card-body" style="padding: 0px 0px;">
+                                    
+     <div class="row">
+                                            <div class="col-md-2">
+                                            <span class="lomelin-text4">Servicios</span>
+                                            </div>
+     </div>
+    
+     <div class="row">
+                                                                 
+                                                                 <div class="col-sm-2">
+                                                                     <input type="checkbox" name="servicio1" value="bano"><span class="lomelin-text24">Baño</span><br>
+                                                                      <input type="checkbox" name="servicio2" value="jardin"><span class="lomelin-text24">Jardin</span><br>
+                                                                      <input type="checkbox" name="servicio3" value="estacionamiento" checked><span class="lomelin-text24">Est.</span><br> 
+                                                                      <input type="checkbox" name="servicio4" value="balcon" checked><span class="lomelin-text24">Balcón</span><br> 
+                                                                 </div>
+                                                                 
+                                                                 <div class="col-sm-2">
+                                                                     <input type="checkbox" name="servicio5" value="recepcion"><span class="lomelin-text24">Recepción</span><br>
+                                                                      <input type="checkbox" name="servicio6" value="seguridad"><span class="lomelin-text24">Seguridad</span><br>
+                                                                      <input type="checkbox" name="servicio7" value="gimnasio" checked><span class="lomelin-text24">Gimnasio</span><br> 
+                                                                      <input type="checkbox" name="servicio8" value="cocina" checked><span class="lomelin-text24">Cocina</span><br> 
+                                                                 </div>
+                                                                 
+                                                                 
+                                                                 
+                                                             </div>  
+          
+       
+              </div>
+         </div>
+          
+      </div>
+         
+     </div>    
+    
+    
+          
+          
+          
+       
+    
 
 </div>    
     

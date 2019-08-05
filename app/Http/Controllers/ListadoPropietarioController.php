@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-/*
+
 class propiedad
 {
     public $id;
@@ -16,7 +16,7 @@ class propiedad
     public $superficie;
     public $tipo;
 }
-*/
+
 
 class ListadoPropietarioController extends Controller
 {
